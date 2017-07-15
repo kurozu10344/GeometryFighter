@@ -39,7 +39,8 @@ class GameViewController: UIViewController {
     func setupCamera() {
         cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 10)
+//        cameraNode.position = SCNVector3(x: 0, y: 0, z: 10)
+        cameraNode.position = SCNVector3(x: 0, y: 5, z: 10)
         scnScene.rootNode.addChildNode(cameraNode)
     }
     
@@ -65,6 +66,7 @@ class GameViewController: UIViewController {
                 return SCNTube(innerRadius: 1.0, outerRadius: 2.0, height: 1.0)
             }
         }()
+        geometry.materials.first?.diffuse.contents = UIColor.random()
         let geometryNode = SCNNode(geometry: geometry)
         geometryNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
         let randomX = Float.random(min: -2, max: 2)
@@ -72,6 +74,10 @@ class GameViewController: UIViewController {
         let force = SCNVector3(x: randomX, y: randomY , z: 0)
         let position = SCNVector3(x: 0.05, y: 0.05, z: 0.05)
         geometryNode.physicsBody?.applyForce(force, at: position, asImpulse: true)
+        
+//        let torque = SCNVector4.init(1, 1, 1, 1)
+//        geometryNode.physicsBody?.applyTorque(torque, asImpulse: true)
+        
         scnScene.rootNode.addChildNode(geometryNode)
         
         // for debug
