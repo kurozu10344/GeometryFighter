@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53075C631F224684002437DA /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 53075C611F224684002437DA /* spark.png */; };
+		53075C641F224684002437DA /* Trail.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 53075C621F224684002437DA /* Trail.scnp */; };
 		534DFBDD1F068E7600100C7D /* GeometryFighter.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 534DFBDC1F068E7600100C7D /* GeometryFighter.scnassets */; };
 		534DFBDF1F07DB9100100C7D /* ShapeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534DFBDE1F07DB9100100C7D /* ShapeType.swift */; };
 		534DFBE81F093B5600100C7D /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534DFBE11F093B5600100C7D /* Double+Extensions.swift */; };
@@ -21,9 +23,12 @@
 		536DEED01F055BE0004FCFB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536DEECE1F055BE0004FCFB7 /* Main.storyboard */; };
 		536DEED21F055BE0004FCFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536DEED11F055BE0004FCFB7 /* Assets.xcassets */; };
 		536DEED51F055BE0004FCFB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536DEED31F055BE0004FCFB7 /* LaunchScreen.storyboard */; };
+		53DFBF1C1F24E6DA00BCBA9C /* Explode.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 53DFBF1B1F24E6DA00BCBA9C /* Explode.scnp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53075C611F224684002437DA /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		53075C621F224684002437DA /* Trail.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Trail.scnp; sourceTree = "<group>"; };
 		534DFBDC1F068E7600100C7D /* GeometryFighter.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = GeometryFighter.scnassets; sourceTree = "<group>"; };
 		534DFBDE1F07DB9100100C7D /* ShapeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeType.swift; sourceTree = "<group>"; };
 		534DFBE11F093B5600100C7D /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		536DEED11F055BE0004FCFB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		536DEED41F055BE0004FCFB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		536DEED61F055BE0004FCFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DFBF1B1F24E6DA00BCBA9C /* Explode.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Explode.scnp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53075C601F224684002437DA /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				53075C611F224684002437DA /* spark.png */,
+				53075C621F224684002437DA /* Trail.scnp */,
+				53DFBF1B1F24E6DA00BCBA9C /* Explode.scnp */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
 		534DFBE01F093B5600100C7D /* GameUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,10 +102,11 @@
 		536DEEC71F055BE0004FCFB7 /* GeometryFighter */ = {
 			isa = PBXGroup;
 			children = (
+				534DFBE01F093B5600100C7D /* GameUtils */,
+				53075C601F224684002437DA /* Particles */,
 				536DEEC81F055BE0004FCFB7 /* AppDelegate.swift */,
 				536DEECC1F055BE0004FCFB7 /* GameViewController.swift */,
 				534DFBDE1F07DB9100100C7D /* ShapeType.swift */,
-				534DFBE01F093B5600100C7D /* GameUtils */,
 				536DEECE1F055BE0004FCFB7 /* Main.storyboard */,
 				536DEED11F055BE0004FCFB7 /* Assets.xcassets */,
 				534DFBDC1F068E7600100C7D /* GeometryFighter.scnassets */,
@@ -131,6 +148,7 @@
 				TargetAttributes = {
 					536DEEC41F055BE0004FCFB7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BX7994P496;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -158,9 +176,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53075C631F224684002437DA /* spark.png in Resources */,
 				536DEED51F055BE0004FCFB7 /* LaunchScreen.storyboard in Resources */,
 				536DEED21F055BE0004FCFB7 /* Assets.xcassets in Resources */,
 				536DEED01F055BE0004FCFB7 /* Main.storyboard in Resources */,
+				53075C641F224684002437DA /* Trail.scnp in Resources */,
+				53DFBF1C1F24E6DA00BCBA9C /* Explode.scnp in Resources */,
 				534DFBDD1F068E7600100C7D /* GeometryFighter.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BX7994P496;
 				INFOPLIST_FILE = GeometryFighter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.htomiyosi.GeometryFighter;
@@ -318,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BX7994P496;
 				INFOPLIST_FILE = GeometryFighter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.htomiyosi.GeometryFighter;
